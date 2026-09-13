@@ -24,7 +24,14 @@ export default defineConfig({
   build: {
     outDir: "dist",
     emptyOutDir: true,
-    // singlefile inlines everything; keep chunk size warning high
     chunkSizeWarningLimit: 3000,
+  },
+  preview: {
+    host: "0.0.0.0",
+    allowedHosts: true,
+  },
+  server: {
+    host: "0.0.0.0",
+    allowedHosts: true,
   },
 });
